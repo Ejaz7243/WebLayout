@@ -1,0 +1,173 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.background {
+  background-image: url("2.jfif");
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100vh;
+}
+
+.menu {
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.leftmenu {
+  width: 35%;
+  line-height: 100px;
+  float: left;
+}
+
+.leftmenu h4 {
+  padding-left: 70px;
+  font-weight: bold;
+  color: white;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  animation: lefttoright 3.5s linear infinite;
+  animation-direction: alternate;
+}
+
+@keyframes lefttoright {
+  from {
+    padding-left: 25%;
+  }
+  to {
+    padding-right: 25%;
+  }
+}
+
+.rightmenu {
+  width: 65%;
+  height: 100px;
+  float: right;
+}
+
+.rightmenu ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.rightmenu ul .search {
+  height: 40px;
+  width: 240px;
+  display: flex;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.rightmenu ul .search input {
+  height: 100%;
+  width: 200px;
+  border: none;
+  padding: 0 10px;
+  color: black;
+  font-size: medium;
+  outline: none;
+  border-radius: 5px;
+}
+
+.rightmenu ul .search .icon {
+  height: 100%;
+  width: 40px;
+  border-radius: 0 5px 5px 0;
+  line-height: 40px;
+  text-align: center;
+  background: #cccccc;
+}
+
+.rightmenu ul .search span {
+  color: #222222;
+  font-size: 18px;
+}
+
+.rightmenu ul div li {
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  font-size: 18px;
+  margin-left: 50px;
+  color: white;
+  font-weight: bold;
+  line-height: 100px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+#fisrtlist {
+  color: orange;
+}
+
+.rightmenu ul div li:hover {
+  color: orange;
+}
+
+.rightmenu ul div li:before {
+  content: " ";
+  position: absolute;
+  top: 60%;
+  left: 0em;
+  background-color: orange;
+  height: 2px;
+  width: 0;
+  transition: all 0.3s linear;
+}
+
+.rightmenu ul div li:hover:before {
+  width: 100%;
+}
+.text {
+  width: 100%;
+  margin-top: 185px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+
+.text h4 {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.text h1 {
+  font-size: 62px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700px;
+  margin: 14px 0px;
+}
+
+.text h3 {
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+}
+
+#buttonone {
+  background-color: white;
+  border: none;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 40px;
+  width: 150px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 25px;
+  border: 3px solid white;
+}
+
+#buttontwo {
+  color: #f2f2f2;
+  background-color: transparent;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 40px;
+  border: 3px solid white;
+  width: 150px;
+}
